@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./tripStyle.css">
+ <link rel="icon" href="airplane.png" type="image/x-icon">
+ <script src="https://kit.fontawesome.com/0573c49afe.js" crossorigin="anonymous"></script>
+ <title>Trip to Paris</title>
+ <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 1px solid #000;
+            line-height: 5px;
+            margin: 10px 0 20px;
+            font-size: 65px;
+            margin-left: 250px;
+            margin-right: 250px;
+        }
+
+        h1 span {
+            background: #fff;
+            padding: 0 10px;
+        }
+
+        .back {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 7%;
+        }
+
+        .paris {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .card {
+            border: 1px solid red;
+            border-radius: 10px;
+            box-shadow: 5px 5px lightgray;
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            font-size: x-large;
+            padding-top: 22px;
+        }
+
+        .newitemm {
+            position: absolute;
+            top: 50%;
+            border: 1px solid red;
+            background-color: white;
+            width: 20%;
+            height: 150px;
+            color: red;
+            text-align: center;
+            margin-left: 40%;
+        }
+
+        .btn {
+            background-color: red;
+            color: white;
+            margin-top: 15px;
+            width: 65px;
+            border-radius: 14px;
+            height: 34px;
+            font-size: 17px;
+        }
+
+        @media screen and (min-width:200px) and (max-width:360px) {
+            .newitemm {
+                top: 40%;
+                border-radius: 10px;
+                width: 65%;
+                padding-top: 10px;
+                height: 134px;
+                margin-left: 15%;
+            }
+
+            .back {
+                justify-content: flex-start;
+                margin-top: 0%;
+                margin-top: -10%;
+                margin-left: 20px;
+            }
+
+            .back p {
+                content-visibility: hidden;
+            }
+
+            .back a i {
+                font-size: 2em;
+            }
+
+            h1 {
+                margin-left: 0px;
+                margin-right: 0px;
+                border: none;
+                font-size: 27px;
+            }
+
+            .card {
+                width: 227px;
+                content-visibility: auto;
+            }
+
+            .card a i {
+                position: absolute;
+                right: 7%;
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+ <div class="parent">
+        <div style="margin-top: 100px; filter: blur(7px);">
+            <h1><span>Trip To Paris</span></h1>
+        </div>
+        <div class="back" style="filter: blur(7px);">
+            <a href="./index.html">
+                <i class="fas fa-arrow-circle-left fa-3x" aria-hidden="true" style="color: red;"></i>
+            </a>
+            <p style="font-size: x-large; margin-left: 12px; margin-top: 10px;">Back</p>
+        </div>
+        <div class="paris" style="filter: blur(7px);">
+            <div class="card">
+                <a style="text-decoration: none; color: red; font-family: serif;" href="./paris.html">Trip to Paris</a>
+                <div
+                    style="border-bottom: 1px solid gray; width: 180px; margin-left: 120px; margin-top: 25px; margin-bottom: 10px;">
+                </div>
+                <p style="color: red; text-decoration: line-through;">Completed Task</p>
+                <input type="checkbox" name="Pending Task" id="Pending Task" value="Task">
+                <label for="Pending Task">Pending Task</label>
+                <br>
+                <a href="./newitem.html"><i class="fas fa-plus-circle fa-2x"
+                        style="color: red; padding-top: 132px; padding-left: 243px;"></i></a>
+            </div>
+        </div>
+        <div class="newitemm">
+            <form action="">
+                <label for="" style="font-family: system-ui; font-size: 22px;">Add New List</label>
+                <br>
+                <input style="margin-top: 12px; border: 1px solid red; border-radius: 4px;" type="text" name="newitemm">
+                <br>
+                <button type="submit" class="btn">ADD</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
